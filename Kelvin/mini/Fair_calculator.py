@@ -57,13 +57,13 @@ while True:
 
 
     # get time from user
-    t_input= input("Enter the time you want to rent the car for in hours: ")
+    t_input= input("Enter the time you want to rent the car in hours: ")
     while not t_input.isdigit() or int(t_input) < 0 or int(t_input) > 23:
         if t_input.lower() == "exit":
             print("Thank you for using our service. Goodbye!")
             exit()
-        print("Invalid input. Enter a valid number for hours.")
-        t_input = input("Enter the time you want to rent the car for in hours: ")
+        print("Invalid input. Enter a valid number for time.")
+        t_input = input("Enter the time you want to rent the car in hours: ")
     t_val = int(t_input)
 
     #print("debug: ", type_of_car, km_val, t_val)
