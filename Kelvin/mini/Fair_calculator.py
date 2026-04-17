@@ -11,7 +11,7 @@ surcharge_mult = 1.5  # peak multiplier
 
 # calcualte fare based on type and distance
 def calculate_fare(cartype, km, t):
-    amt = rates[cartype]*km
+    amt = rates[cartype.lower()]*km
 
     peak = False
     # peak hours - 5pm to 8pm i think
